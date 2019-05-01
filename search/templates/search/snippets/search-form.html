@@ -1,0 +1,10 @@
+
+
+<div class="input-group p-0 justify-content-center">
+    <form action="{% url 'search:query' %}" method="GET" style="padding-right: 20%;" class="w-100 m-0 "search-form>
+        <div class="input-group-append rounded-left">
+            <input type="text" class="form-control rounded-left form-control-sm" autocomplete="off" style="float: left; border-radius: 0;" name="q" placeholder="What you want..." value="{{ request.GET.q }}">
+            <button class="btn btn-success btn-sm rounded-right" style="border-radius: 0;" type="submit">Search</button>
+        </div>
+    </form>
+</div>

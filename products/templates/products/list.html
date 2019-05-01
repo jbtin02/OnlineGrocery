@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class='container'>
+	<div class='row'>
+ 		<div class="col-lg-3"><br>
+			<h3>{% if category %} {{ category.title }} {% else %} Products {% endif %}</h3>
+			{% if not category %} {% endif %}
+				<a href="{% url 'products:list' %}" class="list-group-item">All</a>
+		{% for c in categories %}
+			{% if category.slug == c.slug %} {% endif %}
+				<a href="{{ c.get_absolute_url }}" class="list-group-item"> {{ c.title }} </a>
+		{% endfor %}
+		</div><!-- /.col-lg-3 -->
+
+
+
+
+		<div class="col-lg-9">
+			<div class="row">
+		
+		{% for product in products %}
+					
+					{% include 'products/snippets/card.html' with instance=product %}
+					
+					{% if forloop.counter|divisibleby:2 %}
+				
+					{% elif forloop.counter|divisibleby:2 %}
+
+					{% else %}
+				
+					{% endif %}
+					
+				
+					
+		
+
+		
+		{% endfor %}
+			</div>
+		</div><!-- /.col-lg-9 -->
+	</div> <!-- /.row -->
+</div> <!-- /.container -->
+
+
+{% endblock %}
+
+
+
+		<!-- <div class = 'container' >
+			<div class = 'row' >
+				<div class="col-lg-3 my-4">
+	            	<div class="list-group">
+	                <a href="/cannedgoods" class="list-group-item">Canned Goods</a>
+	                <a href="/pasta" class="list-group-item">Pasta</a>
+	                <a href="/oil" class="list-group-item">oil</a>
+	                <a href="/snacks" class="list-group-item">Snacks</a>
+	            	</div>
+        		</div>
+        	</div>
+        </div> -->
+
+        <!-- important -->
+			<!-- <div class="col-lg-3 my-4">
+	            <div class="list-group">
+	            <a href="/snacks" class="list-group-item">All</a>
+
+	                <a href="/cannedgoods" class="list-group-item">Canned Goods</a>
+	                <a href="/pasta" class="list-group-item">Pasta</a>
+	                <a href="/oil" class="list-group-item">oil</a>
+	                <a href="/snacks" class="list-group-item">Snacks</a>
+
+	                <a href="/snacks" class="list-group-item">Meat</a>
+	                <a href="/snacks" class="list-group-item">Dairy</a>
+	                <a href="/snacks" class="list-group-item">Vegetables</a>
+	                <a href="/snacks" class="list-group-item">Hair</a>
+	                <a href="/snacks" class="list-group-item">Clothes</a>
+	                <a href="/snacks" class="list-group-item">Condiments</a>
+	                <a href="/snacks" class="list-group-item">Bread</a>
+	                <a href="/snacks" class="list-group-item">Breakfast & Cerial</a>
+
+
+
+	                <a href="/snacks" class="list-group-item">Breakfast & Cerial</a>
+	                <a href="/snacks" class="list-group-item">Breakfast & Cerial</a>
+	                <a href="/snacks" class="list-group-item">Breakfast & Cerial</a>
+	            </div>
+        	</div> -->
