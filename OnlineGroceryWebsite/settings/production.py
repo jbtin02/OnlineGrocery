@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'carts',
 ]
 
-# AUTH_USER_MODEL = 'accounts.User' #changes the built-in user model to ours
+AUTH_USER_MODEL = 'accounts.User' #changes the built-in user model to ours
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
