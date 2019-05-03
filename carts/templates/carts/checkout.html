@@ -3,8 +3,10 @@
 
 {% block content %}
 {% if not billing_profile %}
-<div class="jumbotron form-group" style="background-color: #;">
-    <div class='row text-center'>
+<center><div class = 'col-12 col-sm-6 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+    <div class = 'text-center' style="text-align: left; color: red;">
+
+    <div class='row'>
     <div class='col-12 col-md-6 mx-auto py-5'>
     <div class="row"></div>
         <p class='lead'>Login to save your order</p>
@@ -19,14 +21,19 @@
     </div></center>
 
     </div>
+</div>
+</div>
+</div>
+
 
 {% else %}
             
         {% if not object.shipping_address %}
-
+<center><div class = 'col-12 col-sm-6 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+    <div class = 'text-right' style="text-align: left; color: red;">
          <div class='row'>
             <div class='col-12'>
-                <p class='lead'>Shipping Address</p>
+                <center><p class='lead'><b>Shipping Address</b></p></center>
                 <hr/>
             </div>
             <div class='col-6'>
@@ -45,12 +52,15 @@
             {% include 'addresses/prev_addresses.html' with address_qs=address_qs next_url=request.build_absolute_uri address_type='shipping' action_url=checkout_address_reuse %}
             </div>
         </div>
-
+</div>
+</div>
 
         {% elif not object.billing_address %}
+<center><div class = 'col-12 col-sm-6 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+    <div class = 'text-right' style="text-align: left; color: red;">
         <div class='row'>
             <div class='col-12'>
-                 <p class='lead'>Billing Address</p>
+                 <center><p class='lead'><b>Billing Address</b></p></center>
                 <hr/>
             </div>
             <div class='col-6'>
@@ -62,12 +72,14 @@
                 {% url 'checkout_address_reuse' as checkout_address_reuse %}
              {% include 'addresses/prev_addresses.html' with address_qs=address_qs next_url=request.build_absolute_uri  address_type='billing' action_url=checkout_address_reuse %}
          </div>
-
+</div>
+</div>
          
         </div>
         {% else %}
-
-            <h1>Finalize Checkout</h1>
+<center><div class = 'col-12 col-sm-6 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+    <div class = 'text-center' style="text-align: left; color: red;">
+            <h1 style="color:white">Finalize Checkout</h1>
             <p>Cart Items: {% for product in object.cart.products.all %}{{ product }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
             <p>Shipping Address: {{ object.shipping_address.get_address }}</p>
             <p>Billing Address: {{ object.shipping_address.get_address }}</p>
@@ -77,6 +89,8 @@
             <form class='form' method='POST' action="">{% csrf_token %}
                 <button type='submit' class='btn btn-success'>Checkout</button>
             </form>
+</div>
+</div>
         {% endif %}
 {% endif %}
 
