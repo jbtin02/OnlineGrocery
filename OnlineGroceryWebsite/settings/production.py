@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #Third party
+    'storages',
     
     #Our apps
     'products',
@@ -144,6 +146,9 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "static_root
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
+
+from OnlineGroceryWebsite.aws.conf import *
+
 
 # https://www.codingforentrepreneurs.com/blog/create-a-blank-django-project/
 # https://kirr.co/vklau5
