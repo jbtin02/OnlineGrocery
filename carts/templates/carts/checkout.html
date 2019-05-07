@@ -3,7 +3,7 @@
 
 {% block content %}
 {% if not billing_profile %}
-<center><div class = 'col-12 col-sm-8 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+<center><div class = 'col-12 col-sm-8 col-md-8  jumbotron' ><div class="form-group">
     <div class = 'text-center' style="text-align: left; color: red;">
 
     <div class='row'>
@@ -29,7 +29,7 @@
 {% else %}
             
         {% if not object.shipping_address %}
-<center><div class = 'col-12 col-sm-8 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+<center><div class = 'col-12 col-sm-8 col-md-8  jumbotron'><div class="form-group">
     <div class = 'text-right' style="text-align: left; color: red;">
          <div class='row'>
             <div class='col-12'>
@@ -56,7 +56,7 @@
 </div>
 
         {% elif not object.billing_address %}
-<center><div class = 'col-12 col-sm-8 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+<center><div class = 'col-12 col-sm-8 col-md-8  jumbotron' ><div class="form-group">
     <div class = 'text-right' style="text-align: left; color: red;">
         <div class='row'>
             <div class='col-12'>
@@ -77,9 +77,9 @@
          
         </div>
         {% else %}
-<center><div class = 'col-12 col-sm-6 col-md-8  jumbotron' style="background-color: #343a40;"><div class="form-group">
+<center><div class = 'col-12 col-sm-6 col-md-8  jumbotron' "><div class="form-group">
     <div class = 'text-center' style="text-align: left; color: red;">
-            <h1 style="color:white">Finalize Checkout</h1>
+            <h1 style="color:red">Finalize Checkout</h1>
             <p>Cart Items: {% for product in object.cart.products.all %}{{ product }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
             <p>Shipping Address: {{ object.shipping_address.get_address }}</p>
             <p>Billing Address: {{ object.shipping_address.get_address }}</p>
