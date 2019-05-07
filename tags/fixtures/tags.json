@@ -1,0 +1,681 @@
+[
+{
+    "model": "tags.tag",
+    "pk": 1,
+    "fields": {
+        "title": "Canned/Jarred Goods",
+        "slug": "cannedjarredgoods",
+        "timestamp": "2019-05-07T03:32:56.388Z",
+        "active": true,
+        "products": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 2,
+    "fields": {
+        "title": "Beverages",
+        "slug": "beverages",
+        "timestamp": "2019-05-07T03:46:12.753Z",
+        "active": true,
+        "products": [
+            1,
+            27,
+            28,
+            29,
+            2,
+            31,
+            32,
+            38
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 3,
+    "fields": {
+        "title": "Drinks",
+        "slug": "drinks",
+        "timestamp": "2019-05-07T03:47:33.376Z",
+        "active": true,
+        "products": [
+            1,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            38
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 4,
+    "fields": {
+        "title": "Softdrinks",
+        "slug": "softdrinks",
+        "timestamp": "2019-05-07T03:50:47.079Z",
+        "active": true,
+        "products": [
+            1,
+            28,
+            31
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 5,
+    "fields": {
+        "title": "Energy drinks",
+        "slug": "energydrinks",
+        "timestamp": "2019-05-07T03:51:55.515Z",
+        "active": true,
+        "products": [
+            29
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 6,
+    "fields": {
+        "title": "Flavored drinks",
+        "slug": "flavoreddrinks",
+        "timestamp": "2019-05-07T03:53:07.018Z",
+        "active": true,
+        "products": [
+            1,
+            27,
+            28,
+            29,
+            30,
+            2,
+            31,
+            32,
+            38
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 7,
+    "fields": {
+        "title": "Bread/Bakery",
+        "slug": "breadbakery",
+        "timestamp": "2019-05-07T03:57:57.020Z",
+        "active": true,
+        "products": [
+            69,
+            71,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 8,
+    "fields": {
+        "title": "Loaf bread/tasty bread",
+        "slug": "lo",
+        "timestamp": "2019-05-07T03:59:18.572Z",
+        "active": true,
+        "products": [
+            21,
+            22,
+            24
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 9,
+    "fields": {
+        "title": "Canned fish",
+        "slug": "cannedfish",
+        "timestamp": "2019-05-07T04:01:27.915Z",
+        "active": true,
+        "products": [
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 10,
+    "fields": {
+        "title": "Processed Food",
+        "slug": "processedfood",
+        "timestamp": "2019-05-07T04:02:25.840Z",
+        "active": true,
+        "products": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 11,
+    "fields": {
+        "title": "Personal Care",
+        "slug": "personalcare",
+        "timestamp": "2019-05-07T04:06:15.427Z",
+        "active": true,
+        "products": [
+            81,
+            82,
+            84,
+            85,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 12,
+    "fields": {
+        "title": "Hygiene",
+        "slug": "hygiene",
+        "timestamp": "2019-05-07T04:07:44.343Z",
+        "active": true,
+        "products": [
+            81,
+            82,
+            84,
+            85,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 13,
+    "fields": {
+        "title": "Hair Products",
+        "slug": "hairproducts",
+        "timestamp": "2019-05-07T04:08:27.815Z",
+        "active": true,
+        "products": [
+            84,
+            85
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 14,
+    "fields": {
+        "title": "Skin Care",
+        "slug": "skincare",
+        "timestamp": "2019-05-07T04:10:55.150Z",
+        "active": true,
+        "products": [
+            81,
+            94,
+            95,
+            100
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 15,
+    "fields": {
+        "title": "Facial care/Face",
+        "slug": "facialcare",
+        "timestamp": "2019-05-07T04:12:42.819Z",
+        "active": true,
+        "products": [
+            81,
+            94,
+            95,
+            100
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 16,
+    "fields": {
+        "title": "Toiletries",
+        "slug": "toiletries",
+        "timestamp": "2019-05-07T04:13:52.751Z",
+        "active": true,
+        "products": [
+            96,
+            98,
+            101,
+            102,
+            103
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 17,
+    "fields": {
+        "title": "Sanitary Care",
+        "slug": "sanitarycare",
+        "timestamp": "2019-05-07T04:16:20.289Z",
+        "active": true,
+        "products": [
+            41,
+            42,
+            43,
+            44,
+            81,
+            82,
+            84,
+            85,
+            47,
+            94,
+            48,
+            95,
+            96,
+            97,
+            98,
+            49,
+            99,
+            100,
+            101,
+            102,
+            50,
+            103
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 18,
+    "fields": {
+        "title": "Snack foods",
+        "slug": "snack-foods",
+        "timestamp": "2019-05-07T04:18:03.794Z",
+        "active": true,
+        "products": [
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 19,
+    "fields": {
+        "title": "Junk Food",
+        "slug": "junk-food",
+        "timestamp": "2019-05-07T04:18:58.035Z",
+        "active": true,
+        "products": [
+            70,
+            75,
+            76,
+            77,
+            78
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 20,
+    "fields": {
+        "title": "Chips",
+        "slug": "chips",
+        "timestamp": "2019-05-07T04:19:34.415Z",
+        "active": true,
+        "products": [
+            76,
+            78
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 21,
+    "fields": {
+        "title": "Crackers",
+        "slug": "crackers",
+        "timestamp": "2019-05-07T04:20:08.102Z",
+        "active": true,
+        "products": [
+            71,
+            72
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 22,
+    "fields": {
+        "title": "Biscuits",
+        "slug": "biscuits",
+        "timestamp": "2019-05-07T04:21:22.235Z",
+        "active": true,
+        "products": [
+            69,
+            76,
+            79,
+            80
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 23,
+    "fields": {
+        "title": "Cookies",
+        "slug": "cookies",
+        "timestamp": "2019-05-07T04:22:10.584Z",
+        "active": true,
+        "products": [
+            78,
+            80
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 24,
+    "fields": {
+        "title": "Chocolates",
+        "slug": "chocolates",
+        "timestamp": "2019-05-07T04:23:02.461Z",
+        "active": true,
+        "products": [
+            67,
+            68,
+            69,
+            73,
+            78
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 25,
+    "fields": {
+        "title": "Sweets",
+        "slug": "sweets",
+        "timestamp": "2019-05-07T04:23:52.889Z",
+        "active": true,
+        "products": [
+            5,
+            68,
+            73,
+            78,
+            79
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 26,
+    "fields": {
+        "title": "Cupcakes",
+        "slug": "cupcakes",
+        "timestamp": "2019-05-07T04:24:38.838Z",
+        "active": true,
+        "products": [
+            1,
+            79
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 27,
+    "fields": {
+        "title": "Cornick",
+        "slug": "cornick",
+        "timestamp": "2019-05-07T04:25:16.603Z",
+        "active": true,
+        "products": [
+            7,
+            70,
+            77
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 28,
+    "fields": {
+        "title": "Household Products/Cleaning products",
+        "slug": "household-products",
+        "timestamp": "2019-05-07T04:26:58.533Z",
+        "active": true,
+        "products": [
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            49
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 29,
+    "fields": {
+        "title": "Laundry",
+        "slug": "laundry",
+        "timestamp": "2019-05-07T04:27:46.127Z",
+        "active": true,
+        "products": [
+            41,
+            43,
+            45,
+            46,
+            48
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 30,
+    "fields": {
+        "title": "Powdered soap",
+        "slug": "powderedsoap",
+        "timestamp": "2019-05-07T04:28:42.173Z",
+        "active": true,
+        "products": [
+            41,
+            46
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 31,
+    "fields": {
+        "title": "Liquid detergent",
+        "slug": "liquid-detergent",
+        "timestamp": "2019-05-07T04:29:34.894Z",
+        "active": true,
+        "products": [
+            42,
+            49
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 32,
+    "fields": {
+        "title": "Home Care",
+        "slug": "homecare",
+        "timestamp": "2019-05-07T04:30:32.606Z",
+        "active": true,
+        "products": [
+            40,
+            44,
+            47,
+            50
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 33,
+    "fields": {
+        "title": "Brush",
+        "slug": "brush",
+        "timestamp": "2019-05-07T04:30:48.641Z",
+        "active": true,
+        "products": [
+            39
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 34,
+    "fields": {
+        "title": "Condiments/Dressing/Spices",
+        "slug": "condimentsdressingspices",
+        "timestamp": "2019-05-07T04:33:53.512Z",
+        "active": true,
+        "products": [
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            58,
+            57,
+            59,
+            60,
+            61,
+            11,
+            12,
+            63,
+            64,
+            13,
+            14,
+            65,
+            66,
+            35
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 35,
+    "fields": {
+        "title": "Condiments & Dressing & Spices",
+        "slug": "condiments-dressing-spices",
+        "timestamp": "2019-05-07T04:34:59.803Z",
+        "active": true,
+        "products": [
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            58,
+            57,
+            59,
+            60,
+            61,
+            11,
+            12,
+            62,
+            34,
+            63,
+            64,
+            13,
+            14,
+            65,
+            66,
+            35
+        ]
+    }
+},
+{
+    "model": "tags.tag",
+    "pk": 36,
+    "fields": {
+        "title": "Seasoning",
+        "slug": "seasoning",
+        "timestamp": "2019-05-07T04:36:08.410Z",
+        "active": true,
+        "products": [
+            51,
+            52,
+            53,
+            56,
+            58,
+            57,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ]
+    }
+}
+]
