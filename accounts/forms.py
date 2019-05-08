@@ -64,7 +64,7 @@ class UserAdminChangeForm(forms.ModelForm):
 
 
 class GuestForm(forms.Form):
-    email    = forms.EmailField()
+    email    = forms.EmailField(label='Email',widget=forms.TextInput(attrs={"class": "form-control", "placeholder": "Your email"}))
 
 class LoginForm(forms.Form):
     # username = forms.CharField(widget=forms.TextInput(attrs={"class": "form-control", "placeholder": "Your username"}))

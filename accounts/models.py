@@ -99,3 +99,13 @@ class GuestEmail(models.Model):
 
     def __str__(self):
         return self.email
+
+class Contact(models.Model):
+    fullname         = models.CharField(max_length=120)
+    email            = models.EmailField()
+    contact_number   = models.CharField(max_length=120)
+    content          = models.CharField(max_length=120)
+    timestamp        = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email

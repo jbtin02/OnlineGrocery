@@ -5,7 +5,10 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 from .forms import ContactForm
+from accounts.models import Contact
+from django.views.generic import CreateView, FormView
 
+from django.utils.http import is_safe_url
 #category--------------------------------------------
 
 # def category_page(request):
@@ -47,7 +50,9 @@ def about_page(request):
     return render(request, "home_page.html", context)
 
 #CONTACTPAGE------------------------------------------
+User = get_user_model()
 def contact_page(request):
+    success_url = '/'
     contact_form = ContactForm(request.POST or None)
     context = {
             "title":"Contact",
@@ -55,8 +60,34 @@ def contact_page(request):
             "form": contact_form
     
         }
+
+    next_ = request.GET.get('next')
+    next_post = request.POST.get('next')
+    # redirect_path = next_ or next_post or None
+
+
+
+    redirect_path = next_ or next_post or None
+
     if contact_form.is_valid():
         print(contact_form.cleaned_data)
+        fullname  = contact_form.cleaned_data.get("fullname")
+        email  = contact_form.cleaned_data.get("email")
+        contact_number  = contact_form.cleaned_data.get("contact_number")
+        content  = contact_form.cleaned_data.get("content")
+        new_user = Contact.objects.create(fullname=fullname, email=email, contact_number=contact_number, content=content)
+        # if is_safe_url(redirect_path, request.get_host()):
+        #     return redirect(redirect_path)
+        # else:
+        #     return redirect("/")
+
+        # new_fullname = Contact.objects.create(fullname=fullname)
+        # new_email = Contact.objects.create(email=email)
+        # new_contact = Contact.objects.create(contact_number=contact_number)
+        # new_content = Contact.objects.create(content=content)
+        # print(new_user)
+    
+    # return render(request, "contact/view.html", context)
         if request.is_ajax():
             return JsonResponse({"message": "Thank you for your submission"})
 
@@ -70,7 +101,25 @@ def contact_page(request):
 #         print(request.POST.get('fullname'))
 #         print(request.POST.get('email'))
 #         print(request.POST.get('content'))
+
     return render(request, "contact/view.html", context)
+
+
+    # if form.is_valid():
+    #     email       = form.cleaned_data.get("email")
+    #     new_guest_email = GuestEmail.objects.create(email=email)
+    #     request.session['guest_email_id'] = new_guest_email.id
+    #     if is_safe_url(redirect_path, request.get_host()):
+    #         return redirect(redirect_path)
+    #     else:
+    #         return redirect("/register/")
+    # return redirect("/register/")
+
+# class ContactView(CreateView):
+#     form_class = ContactForm
+#     template_name = 'contact/view.html'
+#     success_url = '/'
+
 
 #LOGINPAGE------------------------------------------
 # def login_page(request):
