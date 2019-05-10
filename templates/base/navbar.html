@@ -48,7 +48,7 @@ a.thicker {
         {% include 'search/snippets/search-form.html' %}
         <ul class="navbar-nav ml-auto">
             <li class="nav-item {% if request.path == home_url %}active{% endif %}"><a href="{{ home_url }}" class="nav-link thick"><span class=""></span> Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link thick"><span class=""></span> Account </a></li>
+            
             <li class="nav-item {% if request.path == contact_url %}active{% endif %}"><a href="{{ contact_url }}" class="nav-link thick"><span class=""></span>Contact</a></li>
 
             <li class="nav-item {% if request.path == product_list_url %}active{% endif %}"><a href="{{ product_list_url }}" class="nav-link thick"><span class=""></span> Products</a></li>
@@ -59,6 +59,7 @@ a.thicker {
             <!-- <li class="nav-item"><a href="/profile?user={{session.uid}}" class="nav-link"><span class=""></span>You</a>
             </li> -->
            <!--  <li class="nav-item"><a href="/out" class="nav-link"><span class=""></span> Logout</a></li> -->
+           <li class="nav-item"><a href="#" class="nav-link thick"><span class=""></span> Account </a></li>
             <li class="nav-item {% if request.path == logout_url %}active{% endif %}"><a href="{{ logout_url }}" class="nav-link thick"><span class=""></span> Logout</a></li>
             {% else %}
             <li class="nav-item {% if request.path == register_url %}active{% endif %}"><a href="{{ register_url }}" class="nav-link thick"><span class=""></span> Signup</a></li>
@@ -66,9 +67,8 @@ a.thicker {
             {% endif %}
             <div class="col-3">
             <li class="nav-item {% if request.path == cart_url %}active{% endif %}">
-            <a href="{{ cart_url }}" class="nav-link"><span class='navbar-cart-count'>{{request.session.cart_items}}</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            <a href="{{ cart_url }}" class="nav-link"><span class='navbar-cart-count badge badge-primary'>{{request.session.cart_items}}</span><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
             </div>
-
         </ul>
     </div>
 </nav>
