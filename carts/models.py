@@ -1,3 +1,5 @@
+import math
+
 from decimal import Decimal
 
 from django.conf import settings
@@ -34,7 +36,18 @@ class CartManager(models.Manager):
                 user_obj = user
         return self.model.objects.create(user=user_obj)
 
+# class CartItem(models.Model):
+#     product     = models.ForeignKey(Product)
+#     quantity    = models.IntegerField(default=1)
+#     updated     = models.DateTimeField(auto_now=True)
+#     timestamp   = models.DateTimeField(auto_now_add=True)
+
+#     def __str__(self):
+#         return self.product.title
+
+
 class Cart(models.Model):
+    # items       = models.ManyToManyField(CartItem, null=True, blank=True)
     user        = models.ForeignKey(User, null=True, blank=True)
     products    = models.ManyToManyField(Product, blank=True)
     subtotal    = models.DecimalField(default=0.00, max_digits=65, decimal_places=2)
@@ -66,6 +79,20 @@ m2m_changed.connect(m2m_changed_cart_receiver, sender=Cart.products.through)
 def pre_save_cart_receiver(sender, instance, *args, **kwargs):
     if instance.subtotal > 0:
         instance.total = Decimal(instance.subtotal) * Decimal(1.08) # 8% tax
+        # new_total = math.fsum([instance.total]) --dmo na toh kelangan kasi di nmn need ang fsum kasi nagaccept naman ang decimal to decimal
+
+
+
+        # eto ung pang fix sa maraming decimals pag di ka aunthenticated tas nagAdd to cart ka tas naglogin at tumingin sa cart
+        
+        # formatted_total = format(instance.total, '.2f')
+        # instance.total = formatted_total
+      
+      # end of bug price total
+
+
+        # return instance.total
+        # instance.total = Decimal(instance.subtotal) * Decimal(1.08) # 8% tax
     else:
         instance.total = 0.00
 pre_save.connect(pre_save_cart_receiver, sender=Cart)

@@ -30,6 +30,47 @@ def cart_home(request):
     cart_obj, new_obj = Cart.objects.new_or_get(request)
     return render(request, "carts/home.html", {"cart": cart_obj})
 
+# for quantity
+
+# def update_cart(request,slug):
+
+#     try:
+#         the_id = request.session['cart_id']
+#     except:
+#         new_cart = Cart()
+#         new_cart.save()
+#         request.session['cart_id'] = new_cart.id
+#         the_id = new_cart.id
+#     cart = Cart.objects.get(id=the_id)
+#     try:
+#         product = Product.objects.get(slug=slug)
+#     except Product.DoesNotExist:
+#         pass
+#     except:
+#         pass
+
+#     cart_item, created = CartItem.objects.get_or_created(product=product)
+#     if created:
+#         print("yeah")
+
+#     if not cart_item in cart.items.all():
+#         cart.items.add(cart_item)
+#     else:
+#         cart.products.remove(cart_item)
+
+#     new_total = 0.00
+#     for item in cart.items.all():
+#         line_total = float(item.product.price) * item.quantity
+#         new_total += new_total
+
+#     request.session['items_total'] = cart.items.count()
+#     cart.total = new_total
+#     cart.save()
+
+#     return HttpResponseRedirect(reverse("cart"))
+
+# end of quantity
+
 
 def cart_update(request):
     product_id = request.POST.get('product_id')
