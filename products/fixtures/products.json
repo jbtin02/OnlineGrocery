@@ -1423,5 +1423,125 @@
         "active": true,
         "timestamp": "2019-05-07T03:22:20.547Z"
     }
+},
+{
+    "model": "products.product",
+    "pk": 104,
+    "fields": {
+        "category": 1,
+        "title": "7-Up In Can 330ml",
+        "slug": "7-up-in-can-330ml",
+        "description": "7-Up In Can 330ml",
+        "price": "23.00",
+        "image": "products/1512623152/1512623152.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:48:26.121Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 107,
+    "fields": {
+        "category": 1,
+        "title": "Biofitea Herbal Tea Box By 5S",
+        "slug": "biofitea-herbal-tea-box-by-5s",
+        "description": "Biofitea Herbal Tea Box By 5S",
+        "price": "29.00",
+        "image": "products/970203636/970203636.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:55:44.304Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 108,
+    "fields": {
+        "category": 1,
+        "title": "C2 Green Tea Apple 355 Ml",
+        "slug": "c2-green-tea-apple-355-ml",
+        "description": "C2 Green Tea Apple 355 Ml",
+        "price": "19.30",
+        "image": "products/3665267456/3665267456.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:56:03.724Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 109,
+    "fields": {
+        "category": 1,
+        "title": "C2 Green Tea Apple 500 Ml",
+        "slug": "c2-green-tea-apple-500-ml",
+        "description": "C2 Green Tea Apple 500 Ml",
+        "price": "26.00",
+        "image": "products/43988047/43988047.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:56:57.138Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 110,
+    "fields": {
+        "category": 1,
+        "title": "C2 Green Tea Apple Litro Sw 1 L",
+        "slug": "c2-green-tea-apple-litro-sw-1-l",
+        "description": "C2 Green Tea Apple Litro Sw 1 L",
+        "price": "40.75",
+        "image": "products/3210862041/3210862041.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:57:35.902Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 111,
+    "fields": {
+        "category": 1,
+        "title": "C2 Green Tea Lemon 1L",
+        "slug": "c2-green-tea-lemon-1l",
+        "description": "C2 Green Tea Lemon 1L",
+        "price": "40.75",
+        "image": "products/1052816739/1052816739.png",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:59:20.706Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 112,
+    "fields": {
+        "category": 1,
+        "title": "C2 Green Tea Lemon 355 Ml",
+        "slug": "c2-green-tea-lemon-355-ml",
+        "description": "C2 Green Tea Lemon 355 Ml",
+        "price": "19.30",
+        "image": "products/1523130978/1523130978.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T07:59:56.391Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 113,
+    "fields": {
+        "category": 1,
+        "title": "C2 Green Tea Lemon 500 Ml",
+        "slug": "c2-green-tea-lemon-500-ml",
+        "description": "C2 Green Tea Lemon 500 Ml",
+        "price": "26.00",
+        "image": "products/3720846680/3720846680.png",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-15T08:01:36.433Z"
+    }
 }
 ]
