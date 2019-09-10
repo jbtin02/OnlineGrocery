@@ -1,0 +1,21 @@
+
+/*html {	*/
+	/*background: url("/static/img/4.jpg"); 50% 0 no-repeat fixed
+	height: 100%; */
+	/*background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+/*}*/
+body {
+  /*background-color: lightblue;*/
+  	/*background: url("/static/img/homeAbt.jpg");*/
+  	
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+html {
+	background-color: #373737;
+}
